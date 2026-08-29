@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Complete Revision Guide</title>
+</head>
+<body>
+
+    <!-- ================================================================= -->
+    <!-- 🟦 MODULE 1: TEXT STRUCTURE & SEMANTIC TYPOGRAPHY                 -->
+    <!-- ================================================================= -->
+    <section id="module-1">
+        <!-- 1. Heading Tags -->
+        <h1>Main / Most Important Heading (h1)</h1>
+        <h2>Level 2 Heading (h2)</h2>
+        <h3>Level 3 Heading (h3)</h3>
+        <h4>Level 4 Heading (h4)</h4>
+        <h5>Level 5 Heading (h5)</h5>
+        <h6>Smallest Heading (h6)</h6>
+
+        <hr>
+
+        <!-- 2. Paragraph Tag -->
+        <p>This is a standard text paragraph created using the &lt;p&gt; tag.</p>
+
+        <!-- 3. Text Formatting & Semantic Marks -->
+        <p>
+            Here is <strong>Semantic Strong Importance</strong> and <b>Visual Bold Text</b>.<br>
+            Here is <em>Semantic Stress Emphasis</em> and <i>Visual Italic Text</i>.<br>
+            Text can also be <u>underlined</u>, <ins>inserted with an underline</ins>, or <del>deleted with strikethrough</del>.<br>
+            Chemical Formula: H<sub>2</sub>O (Subscript)<br>
+            Mathematical Power: X<sup>2</sup> (Superscript)<br>
+            Important Note: <mark>Highlighted Text</mark>
+        </p>
+
+        <!-- 4. Void / Unpaired Tags Demo -->
+        <p>Line Break Test: First Line<br>Second Line after &lt;br&gt;</p>
+        <hr>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- 🟦 MODULE 2: HTML LIST ARCHITECTURE                               -->
+    <!-- ================================================================= -->
+    <section id="module-2">
+        <h2>HTML Lists</h2>
+
+        <!-- 2.1 Ordered List -->
+        <h3>Ordered List (&lt;ol&gt;)</h3>
+        <ol type="1" start="5" reversed>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <!-- 2.2 Unordered List -->
+        <h3>Unordered List (&lt;ul&gt;)</h3>
+        <ul style="list-style-type: square;">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+        </ul>
+
+        <!-- 2.3 Description List -->
+        <h3>Description List (&lt;dl&gt;)</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+
+        <hr>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- 🟦 MODULE 3: HYPERLINKS & NAVIGATION                              -->
+    <!-- ================================================================= -->
+    <section id="module-3">
+        <h2>Hyperlinks (&lt;a&gt;)</h2>
+        <p>
+            <a href="https://google.com" target="_blank">Visit Google (External Link)</a>
+        </p>
+        <p>
+            <a href="sample.pdf" download>Download Sample PDF</a>
+        </p>
+
+        <hr>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- 🟦 MODULE 4: MULTIMEDIA TAGS                                      -->
+    <!-- ================================================================= -->
+    <section id="module-4">
+        <h2>Multimedia Tags</h2>
+
+        <!-- 4.1 Image Tag (Void Tag) -->
+        <h3>Image</h3>
+        <img src="https://via.placeholder.com/300x150" alt="Sample Placeholder Image" width="300" height="150">
+
+        <!-- 4.2 Audio Tag -->
+        <h3>Audio</h3>
+        <audio controls loop muted>
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- 4.3 Video Tag -->
+        <h3>Video</h3>
+        <video controls width="400" loop muted poster="https://via.placeholder.com/400x225">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <hr>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- 🟦 MODULE 5: TABLE ARCHITECTURE                                   -->
+    <!-- ================================================================= -->
+    <section id="module-5">
+        <h2>Table Architecture</h2>
+
+        <table border="1" style="border-spacing: 5px;">
+            <thead>
+                <tr>
+                    <th style="padding: 8px;">Name</th>
+                    <th style="padding: 8px;">Role</th>
+                    <th style="padding: 8px;">Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 8px;">Rahul</td>
+                    <td style="padding: 8px;">Developer</td>
+                    <td rowspan="2" style="padding: 8px;">2 Years (Merged Row)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Priya</td>
+                    <td style="padding: 8px;">Designer</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="padding: 8px; text-align: center;">Total Team Members: 2 (Merged Column)</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <hr>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- 🟦 MODULE 6: FORMS & INPUT CONTROLS                               -->
+    <!-- ================================================================= -->
+    <section id="module-6">
+        <h2>Forms &amp; Input Controls</h2>
+
+        <form action="#" method="POST">
+
+            <!-- 1. Text & Basic Inputs -->
+            <fieldset>
+                <legend>Text &amp; Basic Inputs</legend>
+
+                <!-- Label & Input explicit connection using 'for' and 'id' -->
+                <p>
+                    <label for="user-name">Full Name:</label><br>
+                    <input type="text" id="user-name" name="fullname" placeholder="e.g. John Doe">
+                </p>
+
+                <p>
+                    <label for="user-pass">Password:</label><br>
+                    <input type="password" id="user-pass" name="password" placeholder="Enter password">
+                </p>
+
+                <p>
+                    <label for="user-email">Email Address:</label><br>
+                    <input type="email" id="user-email" name="email" placeholder="name@example.com">
+                </p>
+
+                <p>
+                    <label for="user-age">Age (Number):</label><br>
+                    <input type="number" id="user-age" name="age" min="1" max="100" placeholder="25">
+                </p>
+
+                <p>
+                    <label for="user-website">Website (URL):</label><br>
+                    <input type="url" id="user-website" name="website" placeholder="https://example.com">
+                </p>
+
+                <p>
+                    <label for="user-search">Search:</label><br>
+                    <input type="search" id="user-search" name="search" placeholder="Search keywords...">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- 2. Date & Time Pickers -->
+            <fieldset>
+                <legend>Date &amp; Time Pickers</legend>
+
+                <p>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob">
+                </p>
+
+                <p>
+                    <label for="meeting-time">Date &amp; Time (Local):</label><br>
+                    <input type="datetime-local" id="meeting-time" name="meeting_time">
+                </p>
+
+                <p>
+                    <label for="target-week">Select Week:</label><br>
+                    <input type="week" id="target-week" name="target_week">
+                </p>
+
+                <p>
+                    <label for="target-month">Select Month:</label><br>
+                    <input type="month" id="target-month" name="target_month">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- 3. Choice & Selection Inputs -->
+            <fieldset>
+                <legend>Choice &amp; Selection Inputs</legend>
+
+                <p>
+                    Gender (Radio - Select One):<br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </p>
+
+                <p>
+                    Skills (Checkbox - Select Multiple):<br>
+                    <input type="checkbox" id="skill-html" name="skills" value="html">
+                    <label for="skill-html">HTML</label>
+
+                    <input type="checkbox" id="skill-css" name="skills" value="css">
+                    <label for="skill-css">CSS</label>
+
+                    <input type="checkbox" id="skill-js" name="skills" value="js">
+                    <label for="skill-js">JavaScript</label>
+                </p>
+
+                <p>
+                    <label for="fav-color">Favorite Color:</label><br>
+                    <input type="color" id="fav-color" name="fav_color" value="#0000ff">
+                </p>
+
+                <p>
+                    <label for="volume-level">Volume (Range Slider):</label><br>
+                    <input type="range" id="volume-level" name="volume" min="0" max="100">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- 4. File Uploads, Select, Textarea & Buttons -->
+            <fieldset>
+                <legend>File Uploads &amp; Other Controls</legend>
+
+                <p>
+                    <label for="file-upload">Upload Files (.mp3, .pdf):</label><br>
+                    <input type="file" id="file-upload" name="user_files" accept=".mp3,.pdf" multiple>
+                </p>
+
+                <p>
+                    <label for="vehicle-select">Choose Vehicle (Dropdown):</label><br>
+                    <select id="vehicle-select" name="vehicle">
+                        <option value="car">Car</option>
+                        <option value="bus">Bus</option>
+                        <option value="bike">Bike</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="bio-text">Short Bio:</label><br>
+                    <textarea id="bio-text" name="bio" rows="4" cols="40" placeholder="Write something about yourself..."></textarea>
+                </p>
+
+                <p>
+                    <!-- Buttons -->
+                    <input type="submit" value="Submit Form (Input Submit)">
+                    <button type="submit">Submit Form (Button)</button>
+                    <button type="reset">Reset Form</button>
+                    <button type="button" onclick="alert('Hello World!')">Generic Button</button>
+                </p>
+            </fieldset>
+
+        </form>
+    </section>
+
+</body>
+</html>

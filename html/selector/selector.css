@@ -1,0 +1,40 @@
+*{
+    color: white;
+    margin: 10px;
+    background-color: navy;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+}
+
+.box {
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 7px;
+}
+
+#para1{
+    background-color: grey;
+    color: yellow;
+}
+
+#para1:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.6);
+}
+
+
+.para:hover{
+    color: violet;
+}
+
+.para:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.6);
+}

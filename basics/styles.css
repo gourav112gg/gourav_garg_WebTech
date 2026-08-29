@@ -1,0 +1,35 @@
+    #secondHeading {
+        color: red;
+        font-size: 10px;
+        /* background-color: ; */
+    }
+
+    button {
+        color: blue;
+        background-color: green;
+    }
+
+    /*
+    #para1 {
+        font-size: 28px;
+        color: chocolate;
+    }
+
+    #para2 {
+        font-size: 28px;
+        color: chocolate;
+    }
+    */
+
+    .para {
+        font-size: 28px;
+        color: chocolate;
+    }
+
+    /*
+    selector {
+        property: value;
+        property: value;
+        ...
+    }
+    */

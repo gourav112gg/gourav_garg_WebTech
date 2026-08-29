@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(220, 236, 250);
+}
+
+h1 {
+    color: blue;
+}
+
+#container {
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+}
+
+.heading {
+    color: blueviolet;
+}
+
+section+p{
+    background-color: aqua;
+}
