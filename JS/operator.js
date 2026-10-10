@@ -34,41 +34,44 @@
 // let result = age>=18 ? "eligible" : "not eligible";
 // console.log(result);
 
-let a = 4;
-let b = 5;
-console.log(a+b);
-console.log(a-b);
-console.log(a*b);
-console.log(a/b);
-console.log(a%b);
+// let a = 4;
+// let b = 5;
+// console.log(a+b);
+// console.log(a-b);
+// console.log(a*b);
+// console.log(a/b);
+// console.log(a%b);
 
-let ps = 750; 
-let ps1 = 450;
-console.log(ps+ps1);
+// let ps = 750; 
+// let ps1 = 450;
+// console.log(ps+ps1);
 
-let has = 5000;
-let spent = 1850;
-let result = has - spent;
-console.log(result);
+// let has = 5000;
+// let spent = 1850;
+// let result = has - spent;
+// console.log(result);
 
-let sub1 = 75;
-let sub2 = 82;
-let sub3 = 91;
-let total = sub1 + sub2 + sub3;
-let avg = sub1 + sub2 + sub3 / 3;
-let percentage = (total/300)*100;
-console.log(total);
-console.log(avg);
-console.log(percentage);
+// let sub1 = 75;
+// let sub2 = 82;
+// let sub3 = 91;
+// let total = sub1 + sub2 + sub3;
+// let avg = sub1 + sub2 + sub3 / 3;
+// let percentage = (total/300)*100;
+// console.log(total);
+// console.log(avg);
+// console.log(percentage);
 
-let salary = 25000;
-salary += 5000; // salary = salary + 5000
-console.log(salary);
-let hike_salary = salary += 5000;
-console.log(hike_salary);
+// let salary = 25000;
+// salary += 5000; // salary = salary + 5000
+// console.log(salary);
+// let hike_salary = salary += 5000;
+// console.log(hike_salary);
 
-let price = 1000;
-price += 200;
-price -= 100;
-price *= 2;
-console.log(price);
+// let price = 1000;
+// price += 200;
+// price -= 100;
+// price *= 2;
+// console.log(price);
+
+
+
